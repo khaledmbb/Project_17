@@ -1,0 +1,241 @@
+/* Start Header */
+header {
+  background-color: $white;
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  .container-head {
+    @include transition(0.3s ease-in-out);
+    padding: {
+      top: 35px;
+      left: 50px;
+      right: 50px;
+      bottom: 35px;
+    }
+    @include media (sm) {
+      padding: {
+        top: 30px;
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+      }
+    }
+    @include media (xs) {
+      padding: {
+        top: 20px;
+        left: 10px;
+        right: 10px;
+        bottom: 20px;
+      }
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content:first baseline;
+    .bar {
+      display: none;
+      @include media(lg) {
+        display: block;
+      }
+      button {
+        display: flex;
+        border: none;
+        background-color: transparent;
+        svg {
+          font-size: 29px;
+          color: $black;
+          @include prefixer(transition, .2s, webkit moz);
+          &:hover {
+            color: $green;
+          }
+        }
+        &:after {
+          display: none;
+        }
+      }
+      .dropdown-menu {
+        border: none;
+        border-radius: 0px;
+        position: absolute;
+        inset: 0px auto auto 0px;
+        margin: 0px;
+        left: 0 !important;
+        top: 20px !important;
+        transform: translate(51px, 66px);
+        padding: 10px 20px;
+        li {
+          padding: 4px 20px;
+          @include prefixer(transition, .2s, webkit moz o ms);
+          &.active {
+            background: rgba($green, .1);
+          }
+          &:hover {
+            background-color: rgba($green, .1);
+            a {
+              color: $green;
+            }
+          }
+          a {
+            @include prefixer(transition, .2s, webkit moz o ms);
+            color: $black;
+          }
+        }
+      }
+    }
+    .logo {
+      cursor: pointer;
+      h1 {
+        font: {
+          weight: bold;
+          size: $boldFont;
+        }
+        margin: 0;
+          @include prefixer(transition, .2s, webkit);
+          &:hover {
+            color: $green;
+          }
+          color: $black;
+          span {
+            color: $green;
+          }
+      }
+    }
+    nav {
+      @include media(lg) {
+        display: none;
+      }
+      .head-ul {
+        margin: 0;
+        display: flex;
+        .head-li {
+          cursor: pointer;
+          font: {
+            weight: bold;
+          }
+          position: relative;
+          color: $black;
+          padding: 7px 10px;
+          @include prefixer(transition, .2s, webkit moz o ms);
+          &:before {
+            @include prefixer(transition, .3s ease-in-out);
+            @include beforeHover(0);
+          }
+          &:hover::before {
+            @include beforeHover(80%);
+          }
+          a {
+            color: $black;
+            @include prefixer(transition, .2s, webkit moz o ms);
+          }
+          &:hover,&.active {
+            a {
+              color: $green;
+            }
+          }
+          .dropdown-menu {
+            border: none;
+            border-radius: 0px;
+            position: absolute;
+            inset: 0px auto auto 0px;
+            margin: 0px;
+            left: 0 !important;
+            top: 18px !important;
+            transform: translate(51px, 66px);
+            padding: 10px 20px;
+            li {
+              padding: 4px 0px;
+              @include prefixer(transition, .2s, webkit moz o ms);
+              &:hover {
+                background-color: rgba($green, .1);
+                a {
+                  color: $green;
+                  background: transparent;
+                }
+              }
+              a {
+                @include prefixer(transition, .2s, webkit moz o ms);
+                color: $black;
+              }
+            }
+          }
+        }
+      }
+    }
+    .search {
+      cursor: pointer;
+      svg {
+        color: $white;
+      }
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $green;
+    }
+  }
+  h1 {
+    @include media(sm) {
+      font-size: 30px !important;
+    }
+    @include media(xs) {
+      font-size: 25px !important;
+    }
+  }
+  .offcanvas {
+    background: $white !important;
+    width: 50% !important;
+    @include media(md) {
+      width: 100% !important;
+    }
+    h1 {
+      font: {
+      weight: bold;
+      size: 35px;
+    }
+      margin: 0;
+      @include prefixer(transition, .2s, webkit);
+      &:hover {
+        color: $green;
+      }
+      color: $black;
+      span {
+        color: $green;
+      }
+    }
+    .btn-close {
+      &:focus {
+        @include prefixer(box-shadow, none, webkit moz o ms)
+      }
+    }
+    input {
+      border-radius: 1px; 
+      border: 1px solid $green;
+      &:focus {
+        border: 1px solid $green;
+        @include prefixer(box-shadow, none, webkit moz o ms)
+      }
+    }
+    select {
+      border-radius: 1px; 
+      border: 1px solid $green;
+      &:focus {
+        border: 1px solid $green;
+        @include prefixer(box-shadow, none, webkit moz o ms)
+      }
+    }
+    .w-100 {
+      border-radius: 1px;
+      border: none;
+      font-weight: 400;
+      color: $white;
+      padding: {
+        top: 10px;
+        bottom: 10px;
+      }
+      background-color: $green !important;
+  
+    }
+  }
+}
+/* Start End */

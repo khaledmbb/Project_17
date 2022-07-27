@@ -1,0 +1,102 @@
+
+// Prefixer Mixin
+
+@mixin prefixer($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
+
+// animation Mixin
+
+@mixin animation($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+// Opacity Mixin
+
+@mixin opacity($value) {
+  zoom: 1;
+  $opacity-in: $value * 100;
+  filter: alpha(opacity = $opacity-in);
+  opacity: $value;
+}
+
+// Transition Mixin 
+
+@mixin transition($par...) {
+  -webkit-transition: $par;
+  -moz-transition: $par;
+  -o-transition: $par;
+  transition: $par;
+}
+
+// Media Query Mixin 
+
+@mixin media($media-size) {
+  @if $media-size == 'xs' {
+    @media (max-width: 450px) {
+      @content;
+    }
+  } @else if $media-size == 'sm' {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $media-size == 'md' {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $media-size == 'lg' {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $media-size == 'xl' {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $media-size == 'xxl' {
+    @media (max-width: 1400px) {
+      @content;
+    }
+  }
+}
+
+// Before Mixin
+
+@mixin beforeHover($width) {
+  content: '';
+  position: absolute;
+  width: $width;
+  height: 2px;
+  background-color: $green;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// After Mixin
+
+@mixin after($background,$top,$left) {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $background;
+  top: $top;
+  left: $left;
+}
+
+// Flexbox Mixin
+
+@mixin flexBox($gap, $numberOfBox) {
+  flex-basis: calc((100% - #{$gap}) / #{$numberOfBox});
+}

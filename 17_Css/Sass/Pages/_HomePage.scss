@@ -1,0 +1,573 @@
+/* Start Landing Page */
+.landing {
+  .carousel {
+    position: unset;
+    .carousel-indicators {
+      position: absolute;
+      bottom: 30px;
+      margin-bottom: 0;
+      @include media(sm) {
+        bottom: 10px;
+      }
+      button {
+        background-color: $white;
+        width: 18px;
+        height: 10px;
+        @include prefixer(transition, .2s, webkit moz);
+        @include opacity(1);
+        &.active {
+          @include opacity(1);
+          width: 36px;
+          background-color: $green;
+        }
+      }
+    }
+    .carousel-inner {
+      .carousel-item {
+        height: calc(100vh - 120px) !important;
+        position: relative;
+        @include media(sm) {
+          height: calc(100vh - 100px) !important;
+        }
+        @include media(xs) {
+          height: calc(100vh - 80px) !important;
+        }
+      }
+      .carousel-item:nth-child(1) {
+        background-image: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/slide-3.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+      .carousel-item:nth-child(2) {
+        background-image: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/slide-2.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        background-color: rgba($black, 0.45);
+        background-blend-mode:overlay;
+      }
+      .carousel-item:nth-child(3) {
+        background-image: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/slide-1.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        background-color: rgba($black, 0.45);
+        background-blend-mode:overlay;
+      }
+      color: $white;
+      .carousel-item {
+        .container {
+          padding: {
+            top: 110px;
+            bottom: 80px;
+            left: 40px;
+          }
+          @include media(xs) {
+            padding: {
+              top: 80px;
+              bottom: 60px;
+              left: 20px;
+            }
+          }
+          p {
+            margin: 0;
+          }
+          h1 {
+            margin: 0;
+            text-transform: uppercase;
+            font: {
+              weight: bold;
+              size: 74px;
+            }
+            & span {
+              color: $green;
+            }
+            @include media(md) {
+              font-size: 68px;
+            }
+            @include media(sm) {
+              font-size: 64px;
+            }
+            @include media(xs) {
+              font-size: 56px;
+            }
+          }
+          .h1-1 {
+            padding-top: 40px;
+          }
+          .h1-2 {
+            padding-bottom: 90px;
+            @include media(md) {
+              padding-bottom: 50px;
+            }
+            @include media(xs) {
+              padding-bottom: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* End Landing Page */
+
+/* Start Services */
+.services {
+  .container {
+    padding: {
+      top: $sectionsPaddingTop;
+    }
+    .services-main-box {
+      padding-top: $mainBoxPaddingTop;
+      display: flex;
+      gap: 40px;
+      flex-flow: row wrap;
+      .box:nth-child(2) {
+        .box-title {
+          &:before {
+            content: 'Loans';
+            right: -55%;
+            @include media(xl) {
+              right: -50%;
+            }
+            @include media(lg) {
+              right: -70%;
+            }
+            @include media(md) {
+              right: -43%;
+            }
+            @include media(xs) {
+              right: -65%;
+            }
+          }
+        }
+      }
+      .box:nth-child(3) {
+        .box-title {
+          &:before {
+            content: 'Sell';
+            right: -25%;
+            @include media(xl) {
+              right: -20%;
+            }
+            @include media(lg) {
+              right: -40%;
+            }
+            @include media(md) {
+              right: -17%;
+            }
+            @include media(xs) {
+              right: -35%;
+            }
+          }
+        }
+      }
+      .box {
+        @include media(md) {
+          text-align: center;
+        }
+        @include flexBox(80px, 3);
+        @include media(xl) {
+          @include flexBox(40px, 2);
+        }
+        @include media(md) {
+          flex-basis: 100%;
+        }
+        .box-title {
+          color: $black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          padding: 1rem 3rem 1rem 2.5rem;
+          border: 5px solid $green;
+          width: 50%;
+          &:before {
+            content: 'Lifestayle';
+            font-size: $mainBoxPaddingTop / 1.7;
+            position: absolute;
+            right: -102%;
+            @include media(xl) {
+              right: -92%;
+            }
+            @include media(lg) {
+              right: -122%;
+            }
+            @include media(md) {
+              right: -80.6%;
+            }
+            @include media(xs) {
+              right: -112%;
+            }
+          }
+          font: {
+            weight: 500;
+            size: 2.7rem;
+          }
+          svg {
+            font-size: $mainBoxPaddingTop;
+          }
+        }
+        p {
+          padding: {
+            top: 1rem;
+            bottom: 1rem;
+          }
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+/* End Services */
+
+/* Start Property */
+.property {
+  .container {
+    padding: {
+      top: $sectionsPaddingTop;
+    }
+    .property-main-box {
+      padding-top: $mainBoxPaddingTop;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 20px;
+      .box:nth-child(1) {
+        background-image: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/property-3.jpg);
+      }
+      .box:nth-child(2) {
+        background-image: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/post-2.jpg);
+      }
+      .box:nth-child(3) {
+        background-image: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/property-6.jpg);
+      }
+      .box {
+        background-blend-mode: overlay;
+        cursor: pointer;
+        background-position: 50% 50%;
+        background-size: cover;
+        border-radius: 1px;
+        @include flexBox(40px, 3);
+        @include media(xl) {
+          @include flexBox(20px, 2);
+        }
+        @include media(md) {
+          flex-basis: 100%;
+        }
+        height: 550px;
+        background: rgba($black, 0.45);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+        justify-content: end;
+        padding: {
+          left: 20px;
+          right: 20px;
+          bottom: 40px;
+        }
+        color: $white;
+        a {
+          color: $white;
+          font-weight: 300;
+          font-size: 22px;
+          padding-top: 5px;
+          @include prefixer(transition, .2s, webkit moz);
+          &:hover {
+            color: $green;
+          }
+        }
+        .house-info {
+          text-align: center;
+          position: absolute;
+          left: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: {
+            top: 15px;
+            left: 20px;
+            right: 20px;
+          }
+          background-color: $green;
+          width: 100%;
+          top: -100%;
+          @include transition(.8s ease-in-out);
+          .info {
+            h5 {
+              color: $black;
+              z-index: 9;
+            }
+          }
+        }
+        &:hover {
+          .house-info {
+            top: 0;
+          }
+        }
+        &:after {
+          @include after(rgba($black, 0.2), -100%, 0);
+          @include transition(.5s ease-in-out);
+          backdrop-filter: blur(4px);
+          z-index: -1;
+        }
+        z-index: 3;
+        &:hover::after {
+          @include after(rgba($black, 0.2), 105px, 0);
+        }
+      }
+    }
+  }
+}
+/* End Property */
+
+/* Start Property */
+.team {
+  .container {
+    padding: {
+      top: $sectionsPaddingTop;
+    }
+    .team-main-box {
+      padding-top: $mainBoxPaddingTop;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 20px;
+      .box:nth-child(1) {
+        background-image: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/agent-1.jpg);
+      }
+      .box:nth-child(2) {
+        background-image: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/agent-4.jpg);
+      }
+      .box:nth-child(3) {
+        background-image: url(/Context/Icons/Images/JKL.png);
+        background-position: 50% 0%;
+      }
+      .box {
+        background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 1px;
+        @include flexBox(40px, 3);
+        @include media(xl) {
+          @include flexBox(20px, 2);
+        }
+        @include media(md) {
+          flex-basis: 100%;
+        }
+        height: 550px;
+        overflow: hidden;
+        position: relative;
+        padding: {
+          left: 20px;
+          right: 20px;
+          bottom: 40px;
+          top: 40px;
+        }
+        color: $white;
+        &:hover {
+          .text {
+            width: 100%;
+            height: 100%;
+            @include opacity(1);
+          }
+        }
+        .text {
+          @include opacity(0);
+          transition: .4s;
+          position: absolute;
+          width: 70%;
+          height: 70%;
+          background-color: rgba($green, .7);
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          padding: 20px;
+          .p2 {
+            padding: {
+              top: 60px;
+              bottom: 10px;
+            }
+          }
+          .p1 {
+            margin: 0;
+            color: $black;
+            span {
+              font-weight: bold;
+            }
+          }
+          .social-media {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            display: flex;
+            gap: 15px;
+            flex-direction: row;
+            transform: translateX(-50%);
+            padding: 0;
+            svg {
+              cursor: pointer;
+              font-size: 25px;
+              transition: .2s;
+              &:hover {
+                color: $green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* End Property */
+
+/* Start Property */
+.news {
+  .container {
+    padding: {
+      top: $sectionsPaddingTop;
+    }
+    .carousel {
+      padding-top: $mainBoxPaddingTop;
+      .carousel-inner {
+        .news-main-box {
+          .box {
+            overflow: hidden;
+            height: 550px;
+            position: relative;
+            img {
+              width: 100%;
+              position: absolute;
+              height: 100%;
+              @include transition(.8s ease-in-out);
+            }
+            .desc {
+              color: $white;
+              position: absolute;
+              left: 30px;
+              bottom: 0;
+            }
+            &:hover {
+              img {
+                transform: scale(1.2) rotate(2deg);
+              }
+            }
+          }
+        }
+      }
+    .carousel-indicators {
+      position: absolute;
+      bottom: -60px;
+      margin-bottom: 0;
+      @include media(sm) {
+        bottom: 10px;
+      }
+      button {
+        background-color: $grey;
+        width: 18px;
+        height: 10px;
+        @include prefixer(transition, .2s, webkit moz);
+        @include opacity(1);
+        &.active {
+          @include opacity(1);
+          width: 36px;
+          background-color: $green;
+        }
+      }
+    }
+    }
+  }
+}
+/* End Property */
+
+/* Start Tesimonials */
+.testimonial {
+  .container {
+    padding: {
+      top: $sectionsPaddingTop;
+    }
+  }
+  .carousel {
+    padding-top: $mainBoxPaddingTop;
+    .carousel-inner {
+      .testimaiona-main-box {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 30px;
+        align-items: center;
+        .box-img {
+          background-image: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/testimonial-2.jpg);
+          background-size: cover;
+          background-position: 50% 50%;
+          height: 450px;
+        }
+        .box-img-1 {
+          background-image: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/testimonial-1.jpg);
+          background-size: cover;
+          background-position: 50% 50%;
+          height: 450px;
+        }
+        .d {
+          .img {
+            background-image: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/testimonial-1.jpg) !important;
+          }
+        }
+        .box {
+          @include flexBox(30px,2);
+          @include media(lg) {
+            flex-basis: 100%;
+          }
+        }
+        .box:nth-child(even) {
+          .quot {
+            display: block;
+            margin: 50px auto;
+            margin-top: 0;
+            position: relative;
+            svg {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              color: $white;
+            }
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: $green;
+          }
+          p {
+            background-color: rgba($black, .05);
+            padding: 20px ;
+          }
+          .info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .img {
+              background-image: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/testimonial-2.jpg);
+              width: 80px;
+              height: 80px;
+              border-radius: 50%;
+              background-size: cover;
+              background-position: 50% 50%;
+            }
+          }
+        }
+      }
+    }
+    .carousel-indicators {
+      bottom: -80px;
+      button {
+        background-color: $grey;
+        width: 18px;
+        height: 10px;
+        @include prefixer(transition, .2s, webkit moz);
+        @include opacity(1);
+        &.active {
+          @include opacity(1);
+          width: 36px;
+          background-color: $green;
+        }
+      }
+    }
+  }
+}
+/* End Tesimonials */
+

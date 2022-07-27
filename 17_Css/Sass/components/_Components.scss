@@ -1,0 +1,101 @@
+// Landing Or Slider Buttons
+
+.head-btn {
+  background-color: transparent;
+  @include prefixer(transition, .2s, webkit moz);
+  padding: {
+    top: 20px;
+    bottom: 20px;
+    left: 40px;
+    right: 40px;
+  }
+  font: {
+    weight: 500;
+    size: 22px;
+  }
+  &:hover {
+    background-color: $green;
+  }
+  border: 3px solid $green;
+  color: $white;
+}
+
+// Sections Main Title
+
+%link {
+  color: $black;
+  font : {
+    weight: 300;
+    size: 22px;
+  }
+  transition: .2s;
+  &:hover {
+    color: $green;
+  }
+  svg {
+    padding-left: 5px;
+  }
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h2 {
+    color: $black;
+    font: {
+      size: $titleFont;
+      weight: 600;
+    }
+    @include media(sm) {
+      font-size: 40px;
+    }
+    @include media(xs) {
+      font-size: 30px;
+    }
+  }
+  a {
+    @extend %link;
+  }
+}
+
+// Link Read
+
+.read-link {
+  color: $black;
+  @include prefixer(transition, .2s, webkit moz);
+  svg {
+    padding-left: 10px;
+  }
+  &:hover {
+    color: $green;
+  }
+  font: {
+    
+  }
+  @extend %link;
+}
+
+// Property Button 
+
+.property-btn {
+  background-color: transparent;
+  padding: 0px 10px;
+  color: $white;
+  border: 3px solid $green;
+  width: fit-content;
+  @include prefixer(transition, .2s, webkit moz o ms);
+  &:hover {
+    background: $green;
+  }
+} 
+
+// News Button
+
+.news-btn {
+  background-color: $green;
+  padding: 0 10px;
+  border: none;
+  color: $white;
+  cursor: pointer;
+}

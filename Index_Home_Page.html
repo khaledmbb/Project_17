@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Start Links -->
+  <link rel="stylesheet" href="./17_Css/Main.css">
+  <link rel="stylesheet" href="./Context/Icons/all.min.css">
+  <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+  <!-- End Links -->
+
+
+  <title>Estate Ejency</title>
+</head>
+
+<body>
+
+  <!-- Start Header -->
+  <header>
+    <div class="container-head">
+      <div class="bar">
+        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li class="active dropdown-item"><a href="Index_Home_Page.html">Home</a></li>
+          <li class="dorpdown-item"><a href="Index_About_Page.html">About</a></li>
+          <li class="dorpdown-item"><a href="#">Property</a></li>
+          <li class="dorpdown-item"><a href="Index_Blog_Page.html">Blog</a></li>
+          <li class="dorpdown-item"><a href="Index_Service_Page.html">Pages</a></li>
+          <li class="dorpdown-item"><a href="Index_Contact_Page.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <h1>Estate<span>Agency</span></h1>
+      </div>
+      <nav>
+        <ul class="head-ul">
+          <li class="active head-li"><a href="#">Home</a></li>
+          <li class="head-li"><a href="Index_About_Page.html">About</a></li>
+          <li class="head-li"><a href="#">Property</a></li>
+          <li class="head-li"><a href="Index_Blog_Page.html">Blog</a></li>
+          <li class="head-li dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            aria-expanded="false"><a href="#">Pages</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="Index_Service_Page.html">Read Service</a></li>
+              <li><a class="dropdown-item" href="#">Blog Single</a></li>
+              <li><a class="dropdown-item" href="#">Atica Mabrouki</a></li>
+            </ul>
+          </li>
+          <li class="head-li"><a href="Index_Contact_Page.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="search" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+          class="fa-solid fa-magnifying-glass"></i></div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Search <span>Property</span></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="row g-3">
+          <div class="col-md-12">
+            <label for="validationDefault01" class="form-label">Key word</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="Key Word" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault04" class="form-label">State</label>
+            <select class="form-select" id="validationDefault04" required>
+              <option selected disabled value="">Type</option>
+              <option>All Type</option>
+              <option>For Rent</option>
+              <option>For Sell</option>
+              <option>Open House</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationDefault03" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault04" class="form-label">Garages</label>
+            <select class="form-select" id="validationDefault04" required>
+              <option selected disabled value="">Any</option>
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault04" class="form-label">Badrooms</label>
+            <select class="form-select" id="validationDefault04" required>
+              <option selected disabled value="">Any</option>
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <button class="w-100" type="submit">Submit form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Landing Page -->
+  <div class="landing">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1200">
+          <div class="container">
+            <p>Chetma, Biskra</p>
+            <p>620524</p>
+            <h1 class="h1-1"><span>204</span> Mount</h1>
+            <h1 class="h1-2">Rona Road One</h1>
+            <button class="rounded-pill head-btn">RENT | $ 12.000</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1800">
+          <div class="container">
+            <p>Dolor, Florida</p>
+            <p>856343</p>
+            <h1 class="h1-1"><span>413</span> Alira</h1>
+            <h1 class="h1-2">lamarin road three</h1>
+            <button class="rounded-pill head-btn">RENT | $ 9.000</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1800">
+          <div class="container">
+            <p>StockHollm, Swiden</p>
+            <p>092674</p>
+            <h1 class="h1-1"><span>007</span> Rino</h1>
+            <h1 class="h1-2">Venda road five</h1>
+            <button class="rounded-pill head-btn">RENT | $ 10.000</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Landing Page -->
+
+  <!-- Start Services -->
+  <div class="services">
+    <div class="container">
+      <div class="main-title">
+        <h2>Our services</h2>
+      </div>
+      <div class="services-main-box">
+        <div class="box">
+          <div class="box-title">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <p>
+            Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a
+            pellentesque
+            nec, egestas non nisi.
+          </p>
+          <a class="read-link" href="Index_Service_Page.html">Read More <i class="fa-solid fa-arrow-trend-up"></i></a>
+        </div>
+        <div class="box">
+          <div class="box-title">
+            <i class="fa-solid fa-calendar-days"></i>
+          </div>
+          <p>
+            Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet
+            elit, eget
+            tincidunt nibh pulvina
+          </p>
+          <a class="read-link" href="Index_Service_Page.html">Read More <i class="fa-solid fa-arrow-trend-up"></i></a>
+        </div>
+        <div class="box">
+          <div class="box-title">
+            <i class="fa-regular fa-rectangle-list"></i>
+          </div>
+          <p>
+            Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a
+            pellentesque
+            nec, egestas non nisi.
+          </p>
+          <a class="read-link" href="Index_Service_Page.html">Read More <i class="fa-solid fa-arrow-trend-up"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Services -->
+
+  <!-- Start property -->
+  <div class="property">
+    <div class="container">
+      <div class="main-title ">
+        <h2>Latest Property</h2>
+        <a href="">All Propertys <i class="fa-solid fa-arrow-trend-up"></i></a></a>
+      </div>
+      <div class="property-main-box">
+        <div class="box">
+          <h2>174 west central parking</h2>
+          <button class="property-btn rounded-pill">Rent | $ 6.000</button>
+          <a href="">Click Here To View <i class="fa-solid fa-arrow-trend-up"></i></a></a>
+          <div class="house-info">
+            <div class="info">
+              <h5>Area</h5>
+              <p>320 m</p>
+            </div>
+            <div class="info">
+              <h5>beds</h5>
+              <p>3</p>
+            </div>
+            <div class="info">
+              <h5>baths</h5>
+              <p>2</p>
+            </div>
+            <div class="info">
+              <h5>garages</h5>
+              <p>1</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <h2>543 south mintal paris</h2>
+          <button class="property-btn rounded-pill">Rent | $ 42.000</button>
+          <a href="">Click Here To View <i class="fa-solid fa-arrow-trend-up"></i></a></a>
+          <div class="house-info">
+            <div class="info">
+              <h5>Area</h5>
+              <p>400 m</p>
+            </div>
+            <div class="info">
+              <h5>beds</h5>
+              <p>4</p>
+            </div>
+            <div class="info">
+              <h5>baths</h5>
+              <p>4</p>
+            </div>
+            <div class="info">
+              <h5>garages</h5>
+              <p>4</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <h2>74 north olive road two</h2>
+          <button class="property-btn rounded-pill">Rent | $ 25.000</button>
+          <a href="">Click Here To View <i class="fa-solid fa-arrow-trend-up"></i></a></a>
+          <div class="house-info">
+            <div class="info">
+              <h5>Area</h5>
+              <p>500 m</p>
+            </div>
+            <div class="info">
+              <h5>beds</h5>
+              <p>4</p>
+            </div>
+            <div class="info">
+              <h5>baths</h5>
+              <p>2</p>
+            </div>
+            <div class="info">
+              <h5>garages</h5>
+              <p>2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End property -->
+
+  <!-- Start Team -->
+  <div class="team">
+    <div class="container">
+      <div class="main-title ">
+        <h2>Best Agents</h2>
+        <a href="">All Agents <i class="fa-solid fa-arrow-trend-up"></i></a></a>
+      </div>
+      <div class="team-main-box">
+        <div class="box">
+          <div class="text">
+            <h2>Stiven Spilver Darw</h2>
+            <p class="p2">Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.</p>
+            <p class="p1"><span>phone:</span> +54 356 945234</p>
+            <p class="p1"><span>Email:</span> stivenJobs@gmail.com</p>
+            <ul class="social-media">
+              <li class="fa-brands fa-facebook"></li>
+              <li class="fa-brands fa-instagram"></li>
+              <li class="fa-brands fa-twitter"></li>
+              <li class="fa-brands fa-linkedin"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <h2>Margaret Sotillo Escala</h2>
+            <p class="p2">Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.</p>
+            <p class="p1"><span>phone:</span> +54 356 945234</p>
+            <p class="p1"><span>Email:</span> margetSotillo@gmail.com</p>
+            <ul class="social-media">
+              <li class="fa-brands fa-facebook"></li>
+              <li class="fa-brands fa-instagram"></li>
+              <li class="fa-brands fa-twitter"></li>
+              <li class="fa-brands fa-linkedin"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <h2>Khaled Mabrouki</h2>
+            <p class="p2">Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.</p>
+            <p class="p1"><span>phone:</span> +54 356 945234</p>
+            <p class="p1"><span>Email:</span> KhaledMabrouki@gmail.com</p>
+            <ul class="social-media">
+              <li class="fa-brands fa-facebook"></li>
+              <li class="fa-brands fa-instagram"></li>
+              <li class="fa-brands fa-twitter"></li>
+              <li class="fa-brands fa-linkedin"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Team -->
+
+  <!-- Start News -->
+  <div class="news">
+    <div class="container">
+      <div class="main-title ">
+        <h2>Latest News</h2>
+        <a href="">All News <i class="fa-solid fa-arrow-trend-up"></i></a></a>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="600">
+            <div class="news-main-box row">
+              <div class="box col-xl-4 col-lg-6 col-sm-12">
+                <img src="https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/post-.jpg" alt=""
+                  class="img-fluid">
+                <div class="desc">
+                  <button class="news-btn rounded-pill">Travel</button>
+                  <h3>Travel is comming new</h3>
+                  <p>14 jun, 2014</p>
+                </div>
+              </div>
+              <div class="box mt-xl-0 mt-2 col-xl-4 col-lg-6 col-sm-12">
+                <img src="https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/post-2.jpg" alt=""
+                  class="img-fluid">
+                <div class="desc">
+                  <button class="news-btn rounded-pill">House</button>
+                  <h3>House is comming new</h3>
+                  <p>02 feb, 2019</p>
+                </div>
+              </div>
+              <div class="box col-4 d-none d-xl-block">
+                <img src="https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/post-4.jpg" alt=""
+                  class="img-fluid">
+                <div class="desc">
+                  <button class="news-btn rounded-pill">parkinging</button>
+                  <h3>parkinginging is comming new</h3>
+                  <p>22 mar, 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="news-main-box row">
+              <div class="box col-xl-4 col-lg-6 col-sm-12">
+                <img src="https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/post-3.jpg" alt=""
+                  class="img-fluid">
+                <div class="desc">
+                  <button class="news-btn rounded-pill">house</button>
+                  <h3>house is comming new</h3>
+                  <p>30 sep, 2022</p>
+                </div>
+              </div>
+              <div class="box mt-xl-0 mt-2 col-xl-4 col-lg-6 col-sm-12">
+                <img src="https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/post-2.jpg" alt=""
+                  class="img-fluid">
+                <div class="desc">
+                  <button class="news-btn rounded-pill">Travel</button>
+                  <h3>Travel is comming new</h3>
+                  <p>10 avr, 2010</p>
+                </div>
+              </div>
+              <div class="box col-4 d-none d-xl-block">
+                <img src="https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/post-5.jpg" alt=""
+                  class="img-fluid">
+                <div class="desc">
+                  <button class="news-btn rounded-pill">parking</button>
+                  <h3>parking is comming new</h3>
+                  <p>23 jan, 2018</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="news-main-box row">
+              <div class="box col-xl-4 col-lg-6 col-sm-12">
+                <img src="https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/post-3.jpg" alt=""
+                  class="img-fluid">
+                <div class="desc">
+                  <button class="news-btn rounded-pill">Travel</button>
+                  <h3>Travel is comming new</h3>
+                  <p>14 jun, 2014</p>
+                </div>
+              </div>
+              <div class="box mt-xl-0 mt-2 col-xl-4 col-lg-6 col-sm-12">
+                <img src="https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/post-5.jpg" alt=""
+                  class="img-fluid">
+                <div class="desc">
+                  <button class="news-btn rounded-pill">House</button>
+                  <h3>House is comming new</h3>
+                  <p>02 feb, 2019</p>
+                </div>
+              </div>
+              <div class="box col-4 d-none d-xl-block">
+                <img src="https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/post-4.jpg" alt=""
+                  class="img-fluid">
+                <div class="desc">
+                  <button class="news-btn rounded-pill">parking</button>
+                  <h3>parking is comming new</h3>
+                  <p>22 mar, 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End property -->
+
+  <!-- Start Testimonials -->
+  <div class="testimonial">
+    <div class="container">
+      <div class="main-title ">
+        <h2>Testimonials</h2>
+      </div>
+      <div id="carouselExampleCaptions1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <div class="testimaiona-main-box">
+              <div class="box box-img">
+              </div>
+              <div class="box">
+                <div class="quot"><i class="fa-solid fa-quote-right"></i></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, veritatis accusantium. Mollitia
+                  aliquid beatae a voluptatem dolorem quam ipsa earum.</p>
+                <div class="info">
+                  <div class="img"></div>
+                  <h4>Pabllo & Emma</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="testimaiona-main-box">
+              <div class="box box-img-1">
+              </div>
+              <div class="box d">
+                <div class="quot"><i class="fa-solid fa-quote-right"></i></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, veritatis accusantium. Mollitia
+                  aliquid beatae a voluptatem dolorem quam ipsa earum.</p>
+                <div class="info">
+                  <div class="img"></div>
+                  <h4>marcoss & gaga</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Testimonials -->
+
+  <!-- Start Footer -->
+  <footer>
+    <div class="container">
+      <div class="foot-main-box row">
+        <div class="box col-xl-4 col-lg-12 ">
+          <h1>Estate <span>Agency</span></h1>
+          <div class="desc">
+            <p>Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis
+              sed aute irure.</p>
+            <p>phone: <span>+54 356 945234</span></p>
+            <p>Email: <span>KhaledMabrouki@gmail.com</span></p>
+          </div>
+        </div>
+        <div class="box col-xl-4 col-lg-6 col-sm-12">
+          <h1>the company</h1>
+          <div class="desc">
+            <ul>
+              <li><i class="fa-solid fa-angle-right"></i> site map</li>
+              <li><i class="fa-solid fa-angle-right"></i> legal</li>
+              <li><i class="fa-solid fa-angle-right"></i> agent admin</li>
+              <li><i class="fa-solid fa-angle-right"></i> careers</li>
+              <li><i class="fa-solid fa-angle-right"></i> affilates</li>
+              <li><i class="fa-solid fa-angle-right"></i> privacy polici</li>
+            </ul>
+          </div>
+        </div>
+        <div class="box col-xl-4 col-lg-6 col-sm-12">
+          <h1>International sites</h1>
+          <div class="desc">
+            <ul>
+              <li><i class="fa-solid fa-angle-right"></i> venzuela</li>
+              <li><i class="fa-solid fa-angle-right"></i> china</li>
+              <li><i class="fa-solid fa-angle-right"></i> hong kong</li>
+              <li><i class="fa-solid fa-angle-right"></i> argentina</li>
+              <li><i class="fa-solid fa-angle-right"></i> singapore</li>
+              <li><i class="fa-solid fa-angle-right"></i> phillpenise</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="social-media">
+        <ul>
+          <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="end text-center">
+      <p>&copy; Copyright <span>EstateAgency</span> All Rights Reserved.</p>
+      <small>designed by <span>Khaled Mabrouki</span></small>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Start Script Files -->
+  <script src="./Context/Icons/all.min.js"></script>
+  <script src="./Bootstrap/bootstrap.bundle.min.js"></script>
+
+  <script>
+    let headerContainer = document.querySelector('header .container-head');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', () => {
+      if (this.scrollY >= 200) {
+        headerContainer.style.padding = '20px 50px';
+        header.style.cssText = 'box-shadow: #0000002e 0px 0px 20px';
+      } else {
+        headerContainer.style.padding = '35px 50px';
+      }
+    })
+  </script>
+  <!-- End Script Files -->
+</body>
+
+</html>
